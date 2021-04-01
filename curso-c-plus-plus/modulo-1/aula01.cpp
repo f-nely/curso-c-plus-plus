@@ -14,5 +14,12 @@ int main() {
 	cout << "Double " << numeroGrande << endl;
 	cout << "Char " << letra << endl;*/
 	
+	float numero;
+	
+	cout << "Informe um numero: ";
+	cin >> numero;
+	
+	cout << "O número informado eh: " << numero;
+	
 	return 0;
 }

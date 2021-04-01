@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	
-	int numero = 20;
+	/*int numero = 20;
 	float numeroDecimal = 20.45;
 	double numeroGrande = 20.1245;
 	char letra = 'c';
@@ -12,7 +12,7 @@ int main() {
 	cout << "Inteiro " << numero << endl;
 	cout << "Decimal " << numeroDecimal << endl;
 	cout << "Double " << numeroGrande << endl;
-	cout << "Char " << letra << endl;
+	cout << "Char " << letra << endl;*/
 	
 	return 0;
 }

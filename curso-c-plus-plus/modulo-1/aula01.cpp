@@ -19,7 +19,7 @@ int main() {
 	cout << "Informe um numero: ";
 	cin >> numero;
 	
-	cout << "O nÃºmero informado eh: " << numero;
+	cout << "O número informado eh: " << numero;
 	
 	return 0;
 }

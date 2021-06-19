@@ -14,6 +14,8 @@ void inserirValor(Elementos *&, Elementos *&, int);
 
 bool isEmpty(Elementos *);
 
+void deletarValor(Elementos *&, Elementos *&, int );
+
 int main()
 {
     Elementos *inicio = NULL;
@@ -25,7 +27,24 @@ int main()
         cout << "Informe um valor: ";
         cin >> valorInformado;
         inserirValor(inicio, fim, valorInformado);
+
+        while (inicio != NULL) {
+
+            deletarValor(inicio, fim, valorInformado);
+
+            if (inicio != NULL) {
+                cout << valorInformado << " - ";
+            } else {
+                cout << " - ";
+            }
+
+        }
+
     }
+
+    //cout << "Deletando Valores!" << endl;
+
+
 
     return 0;
 }
@@ -50,4 +69,20 @@ void inserirValor(Elementos *&inicio, Elementos *&fim, int n)
 bool isEmpty(Elementos *inicio)
 {
     return (inicio == NULL) ? true : false;
+}
+
+void deletarValor(Elementos *&inicio, Elementos *&fim, int n)
+{
+    n = inicio ->dados;
+
+    Elementos *aux = inicio;
+
+    if (inicio == NULL) {
+        inicio = NULL;
+        fim = NULL;
+
+    } else {
+        inicio = inicio ->seguinte;
+    }
+    delete aux;
 }
